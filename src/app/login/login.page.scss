@@ -1,0 +1,75 @@
+/* Fondo oscuro y colores del tema */
+.dark-theme {
+    --background: #2d2d2d; /* Fondo oscuro */
+    --ion-text-color: #fff; /* Color de texto blanco */
+  }
+  
+  /* Centrar el logo */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Separación del logo desde el top */
+  }
+  
+  .app-logo {
+    width: 232px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-bottom: 20px; /* Separación con el siguiente contenido */
+  }
+  
+  /* Estilo para los ion-items */
+  ion-item {
+    --background: #3a3a3a; /* Fondo oscuro para los campos de entrada */
+    --color: #fff; /* Color del texto en los inputs */
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  /* Estilo para las etiquetas de los campos */
+  ion-label {
+    color: #fff; /* Color blanco para las etiquetas */
+  }
+  
+  /* Estilo para los botones */
+  ion-button {
+    margin-bottom: 10px;
+  }
+  
+  ion-button[fill="outline"] {
+    --border-color: #007bff; /* Color del borde de los botones outline */
+    --color: #007bff; /* Color del texto en el botón outline */
+    --background: transparent; /* Fondo transparente */
+  }
+  
+  ion-button[fill="outline"]:hover {
+    --border-color: #0056b3; /* Color más oscuro cuando se pasa el cursor */
+    --color: #0056b3;
+  }
+  
+  /* Diseño general */
+  ion-grid {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ajustes de espaciado */
+  ion-row {
+    width: 100%;
+    max-width: 400px; /* Limitar el ancho máximo para los elementos */
+    margin: 0 auto;
+  }
+  
+  /* Cuando el formulario esté vacío, los elementos deben centrar el contenido */
+  ion-col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Estilo para el borde de los botones */
+  ion-button {
+    --border-radius: 8px; /* Bordes redondeados para los botones */
+  }
+  

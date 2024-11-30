@@ -1,0 +1,93 @@
+/* Estilos generales del carrito */
+ion-content {
+    background-color: #f4f4f9; /* Fondo claro para que resalte el contenido */
+    padding: 1rem;
+  }
+  
+  /* Estilo para los elementos del carrito */
+  ion-list {
+    margin-bottom: 1rem;
+  }
+  
+  ion-item {
+    background-color: #fff;
+    border-radius: 45px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect para los items del carrito */
+  ion-item:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Estilo del nombre del producto */
+  ion-item h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Estilo para la descripción del producto */
+  ion-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Estilo para el precio */
+  ion-item .price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2a9d8f; /* Un color verde azulado para dar énfasis al precio */
+  }
+  
+  /* Total a pagar */
+  ion-item.total {
+    background-color: #2a9d8f;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Botón de Pagar */
+  ion-button {
+    font-size: 1.1rem;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect para el botón de pago */
+  
+  
+  /* Estilo para el footer */
+  ion-footer {
+    background-color: #2a9d8f;
+    padding: 10px;
+  }
+  
+  ion-footer ion-button {
+    font-size: 1rem;
+    background-color: #e76f51;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  
+  /* Icono de regreso */
+  ion-buttons ion-icon {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  

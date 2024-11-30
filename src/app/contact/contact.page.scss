@@ -1,0 +1,43 @@
+/* General styles for the contact page */
+ion-content {
+  --background: #f4f7fb; /* Light background */
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+}
+
+/* Contact section styles */
+.contact-info {
+  background-color: #ffffff; /* White background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Contact title */
+.contact-info h2 {
+  font-size: 22px;
+  color: #4b4b89;
+  margin-bottom: 15px;
+}
+
+/* Contact paragraph */
+.contact-info p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Style for the email link */
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker blue on hover */
+}

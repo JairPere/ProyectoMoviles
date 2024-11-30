@@ -1,0 +1,86 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item button routerLink="/login">Iniciar Sesión</ion-item>
+      <ion-item button routerLink="/about">Acerca de</ion-item>
+      <ion-item button routerLink="/contact">Contacto</ion-item>
+      <ion-item button routerLink="/privacy-policy">Aviso de Privacidad</ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- Encabezado sin título principal -->
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button> <!-- Botón para abrir el menú -->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contenido principal con título centrado -->
+<ion-content id="main-content" class="dark-theme">
+  <div class="center-title">
+    <h1>Bienvenido a la Tienda de Software</h1>
+  </div>
+
+  <ion-grid>
+    <!-- Producto Sony Vegas -->
+    <ion-row>
+      <ion-col size="12" size-md="4">
+        <ion-card class="product-card">
+          <img src="../../assets/img/Vegas.png" alt="Sony Vegas" />
+          <ion-card-header>
+            <ion-card-title>Sony Vegas Pro</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Software de edición de video profesional. Ideal para crear videos de alta calidad y realizar ediciones avanzadas.</p>
+            <p><strong>Precio:</strong> $3,500 MXN</p>
+            <ion-button expand="block" color="success" routerLink="/login">Ver Detalles</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- Producto Photoshop -->
+      <ion-col size="12" size-md="4">
+        <ion-card class="product-card">
+          <img src="../../assets/img/adob.png" alt="Adobe Photoshop" />
+          <ion-card-header>
+            <ion-card-title>Adobe Photoshop</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Software de edición y diseño gráfico líder en la industria. Ideal para diseñadores, fotógrafos y creativos.</p>
+            <p><strong>Precio:</strong> $2,800 MXN</p>
+            <ion-button expand="block" color="success" routerLink="/login">Ver Detalles</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- Producto PowerPoint -->
+      <ion-col size="12" size-md="4">
+        <ion-card class="product-card">
+          <img src="../../assets/img/PowerPoint.png" alt="Microsoft PowerPoint" />
+          <ion-card-header>
+            <ion-card-title>Microsoft PowerPoint</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Herramienta para crear presentaciones profesionales. Usado por empresas, instituciones educativas y profesionales.</p>
+            <p><strong>Precio:</strong> $1,200 MXN</p>
+            <ion-button expand="block" color="success" routerLink="/login">Ver Detalles</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button expand="full" color="tertiary" routerLink="/login">Ver Todos los Productos</ion-button>
+  <ion-button expand="full" color="secondary" (click)="mostrarNotification()">Mostrar Notificación</ion-button>
+  
+
+</ion-content>

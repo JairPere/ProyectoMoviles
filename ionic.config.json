@@ -1,0 +1,10 @@
+{
+  "name": "software-store",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

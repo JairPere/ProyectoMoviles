@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <!-- Botón de menú para abrir el menú lateral -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button> <!-- Botón de hamburguesa para abrir el menú -->
+    </ion-buttons>
+    <ion-title>Productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="main-content" class="dark-theme">
+  <ion-grid>
+    <ion-row>
+      <!-- Usamos *ngFor para iterar sobre el arreglo de productos -->
+      <ion-col size="12" size-md="6" size-lg="4" *ngFor="let product of products">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>{{ product.name }}</ion-card-title> <!-- Nombre del producto -->
+          </ion-card-header>
+          <ion-card-content>
+            <p>{{ product.description }}</p> <!-- Descripción del producto -->
+            <p class="price">Precio: {{ product.price | currency }}</p> <!-- Precio del producto -->
+            <ion-button expand="full" (click)="addToCart(product)" color="success">Agregar al carrito</ion-button>
+            <ion-button expand="full" (click)="checkout(product)" color="primary">Comprar</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-button expand="full" (click)="viewCart()" color="secondary">Ver Carrito</ion-button>
+  </ion-toolbar>
+</ion-footer>
+
+<!-- Menú Lateral -->
+<ion-menu side="start" menuId="first" contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <!-- Opción de cerrar sesión -->
+      <ion-item button (click)="logout()">
+        <ion-icon name="log-out-outline" slot="start"></ion-icon>
+        <ion-label>Cerrar Sesión</ion-label>
+      </ion-item>
+      <!-- Agregar más opciones si es necesario -->
+    </ion-list>
+  </ion-content>
+</ion-menu>

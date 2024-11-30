@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Pagar</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="goHome()">Regresar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="padding: 20px;">
+    <h3>Total a Pagar: {{ total | currency }}</h3>
+    <!-- Aquí aparecerá el botón de PayPal -->
+    <div id="paypal-button-container"></div>
+  </div>
+</ion-content>

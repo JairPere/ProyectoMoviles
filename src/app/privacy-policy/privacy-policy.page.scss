@@ -1,0 +1,84 @@
+/* Estilos generales */
+.aviso-privacidad {
+    background-color: #f4f7f9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+  }
+  
+  /* Encabezados */
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    color: #34495e;
+    margin-top: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+  }
+  
+  /* Párrafos */
+  p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Listas */
+  ul {
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+    color: #3498db;
+  }
+  
+  /* Botón de regreso */
+  ion-button {
+    --background-hover: #3498db;
+    --color: white;
+  }
+  
+  /* Animación sutil para títulos */
+  h2, h3 {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
